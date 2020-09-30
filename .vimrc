@@ -1,3 +1,14 @@
+call plug#begin()
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+call plug#end()
+
+map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
+
+
+
 syntax enable
 
 set number    
@@ -27,6 +38,4 @@ let g:solarized_termtrans = 1
 let g:solarized_termcolors=256
 
 set background=dark
-colorscheme solarized
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
